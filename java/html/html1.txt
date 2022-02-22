@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <script >
+
+        function checkPassword(form) {
+
+    password1 = form.password1.value;
+
+    password2 = form.password2.value;
+
+
+    // If password not entered
+
+    if (password1 == '')
+
+        alert ("Please enter Password");
+
+          
+
+    // If confirm password not entered
+
+    else if (password2 == '')
+
+        alert ("Please enter confirm password");
+
+          
+
+    // If Not same return False.    
+
+    else if (password1 != password2) {
+
+        alert ("\nPassword did not match: Please try again...")
+
+        return false;
+
+    }
+
+
+    // If same return True.
+
+    else{
+
+        alert("Password Match: Welcome to GeeksforGeeks!")
+
+        return true;
+
+    }
+
+}
+
+    </script>
+
+    
+
+</head>
+
+<body>
+
+    <h1 class="heading">REGISTRATION FORM</h1>
+
+    <form onsubmit="return checkPassword(this)">
+
+        <label for="username">Username</label>
+
+        <input type="text"><br><br>
+
+        <label id="password1">Password1</label>
+
+        <input type="password" name="password1"><br><br>
+
+        <label id="password2">Password2</label>
+
+        <input type="password" name="password2"><br><br>
+
+        <label for="">Email</label>
+
+        <input type="email" placeholder="name@gmail.com" required/><br><br>
+
+        <input type="submit" id="submit-button" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
+[2/22, 9:16 PM] shabana: !DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LOGIN AND REGISTRATION</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <h1 class="heading">Home Page</h1>
+
+        <ul class="nav-ul">
+
+            <li><a href="#">Home</a> </li>
+
+            <li><a href="">AboutUs</a></li>
+
+            <li><a href="">ContactUs</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div id="first-div">
+
+        <h1 class="login-heading">LOGIN</h1>
+
+        <form>
+
+            <label for="username">Username</label>
+
+            <input type=" "><br><br>
+
+            <label for="password">Password</label>
+
+            <input type=""><br><br>
+
+            <input type="submit" value="login"><br><br>
+
+            <a href="registration.html">Registration</a>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
