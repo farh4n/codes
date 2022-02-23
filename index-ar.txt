@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    nav{
+        background-color: brown;
+        height: 90px;
+        width: 100%;
+    }
+    .logo{
+        color: cornsilk;
+        font-size: 50px;
+        line-height: 80px;
+        margin-left: 50px;
+        width: 40%;
+        display: inline-block;
+    }
+    .navlist{
+        float: right;
+        margin-right: 20px;
+    }
+    .navlist li{
+        display: inline-block;
+        line-height: 80px;
+    }
+    .navlist li a{
+        text-decoration: none;
+        color: floralwhite;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+    .navlist li a:hover{
+        background-color: gray;
+        transition: 1s;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">Movies</h1>
+            <ul class="navlist">
+                <li><a href="#">Home</a></li>
+                <li><a href="login-ar.html">Login</a></li>
+                <li><a href="#">Director</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

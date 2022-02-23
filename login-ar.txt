@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        form{
+            margin: 200px 400px;
+           border: 2px solid black;
+           width: 30%;
+           padding: 100px;
+           background-color: cadetblue;
+        }
+        #log{
+            color: darkgray;
+            background-color: darkblue;
+        }
+        #reg{
+            color: darkgray;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <label for="username">USERNAME:</label>
+        <input type="text" id="username"><br><br>
+        <label for="password">PASSWORD:</label>
+        <input type="password" id="pass"><BR><BR>
+        <button id="log">LOGIN</button>
+        <button id="reg"><a href="reg.html">REGISTER</a></button>
+    </form>
+</body>
+</html>
